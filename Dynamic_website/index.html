@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 4</title>
+
+    <style>
+        body { font-family: Arial; text-align: center; }
+
+        .dark {
+            background: black;
+            color: white;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            margin: auto;
+        }
+
+        button {
+            margin: 5px;
+            padding: 8px 12px;
+        }
+
+        img {
+            width: 400px;
+            height: 250px;
+            border: 5px solid orange;
+        }
+
+        input {
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ================= Task 1 ================= -->
+<h2>Student Table</h2>
+
+<input type="text" id="name" placeholder="Enter Name">
+<input type="number" id="age" placeholder="Enter Age">
+<button onclick="addStudent()">Add Student</button>
+
+<table id="studentTable">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Actions</th>
+    </tr>
+</table>
+
+<hr>
+
+<!-- ================= Task 2 ================= -->
+<h2>Count Elements</h2>
+
+<input type="text" id="tagInput" placeholder="Enter Tag Name">
+<input type="text" id="classInput" placeholder="Enter Class Name">
+<input type="text" id="idInput" placeholder="Enter ID">
+<input type="text" id="nameInput" placeholder="Enter Name Attribute">
+
+<br>
+
+<button onclick="showResult()">Show Result</button>
+
+<h3 id="output"></h3>
+
+
+<div class="box" name="test"></div>
+<div class="box" name="test"></div>
+<p class="box"></p>
+<span id="mySpan" name="test"></span>
+
+<hr>
+
+<!-- ================= Task 3 ================= -->
+<h2>Dark / Light Mode</h2>
+
+<button onclick="toggleMode()">Toggle Mode</button>
+
+<hr>
+
+<!-- ================= Task 4 ================= -->
+<h2>Slider</h2>
+
+<button onclick="prev()">◀</button>
+
+<img id="slider" src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4">
+
+<button onclick="next()">▶</button>
+
+<br><br>
+
+<button onclick="play()" style="background:green;color:white;">Play</button>
+<button onclick="stop()" style="background:red;color:white;">Stop</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
