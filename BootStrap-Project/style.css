@@ -1,0 +1,192 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+
+.custom-nav{
+    background-color: #212529;
+    padding: 20px 0;
+}
+
+.logo{
+    color: #ffc800 !important;
+    font-size: 32px;
+    font-style: italic;
+}
+
+.nav-link{
+    color: white !important;
+    margin-left: 20px;
+    transition: .3s;
+}
+
+.nav-link:hover{
+    color: #ffc800 !important;
+}
+
+/* HERO */
+
+.hero{
+    height: 100vh;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,.6),
+    rgba(0,0,0,.6)),
+    url(assets/img/header-bg.jpg);
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-subtitle{
+    font-size: 40px;
+    font-style: italic;
+}
+
+.hero-title{
+    font-size: 85px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.custom-btn{
+    background-color: #ffc800;
+    color: white;
+    padding: 18px 40px;
+    font-weight: bold;
+    border: none;
+}
+
+.custom-btn:hover{
+    background-color: #e6b800;
+    color: white;
+}
+
+/* SECTIONS */
+
+.section-title{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.section-subtitle{
+    color: gray;
+    font-style: italic;
+}
+
+/* SERVICES */
+
+.icon-circle{
+    width: 130px;
+    height: 130px;
+
+    background-color: #ffc800;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.icon-circle i{
+    color: white;
+    font-size: 50px;
+}
+
+/* PORTFOLIO */
+
+.portfolio{
+    background-color: #f8f9fa;
+}
+
+.portfolio-item{
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-overlay{
+    position: absolute;
+    inset: 0;
+
+    background-color: rgba(255,200,0,.8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+
+    transition: .4s;
+
+    cursor: pointer;
+}
+
+.portfolio-overlay i{
+    color: white;
+    font-size: 60px;
+}
+
+.portfolio-item:hover .portfolio-overlay{
+    opacity: 1;
+}
+
+.portfolio-info{
+    background-color: white;
+    padding: 20px;
+}
+
+/* TEAM */
+
+.team{
+    background-color: #f8f9fa;
+}
+
+.team-img{
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 8px solid #ddd;
+}
+
+/* CONTACT */
+
+.contact{
+    background-color: #212529;
+}
+
+input,
+textarea{
+    padding: 20px !important;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .hero-title{
+        font-size: 45px;
+    }
+
+    .hero-subtitle{
+        font-size: 25px;
+    }
+
+    .section-title{
+        font-size: 40px;
+    }
+
+    .nav-link{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+}
